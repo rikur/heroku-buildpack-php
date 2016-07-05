@@ -1,11 +1,5 @@
 #!/bin/bash
 
-# fail hard
-set -o pipefail
-# fail harder
-set -eu
-set -v
-
 echo "-----> Extracting Phalcon..."
 
 echo "extension=phalcon.so" > /app/.heroku/php/etc/php/conf.d/007-ext-phalcon.ini
