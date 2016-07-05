@@ -287,7 +287,7 @@ install_blackfire_ext
 install_newrelic_ext
 install_newrelic_userini
 
-source $BP_DIR/bin/phalcon.sh
+source $bp_dir/bin/phalcon.sh
 
 # done with platform installs; restore COMPOSER from previous value
 export COMPOSER="$COMPOSER_bak"
