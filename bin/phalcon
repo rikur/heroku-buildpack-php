@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dep_url=git@github.com:rikur/cphalcon.git
+dep_url=https://github.com/rikur/cphalcon.git
 phalcon_dir=cphalcon
 cwd=$(pwd)
 
