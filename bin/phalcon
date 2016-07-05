@@ -8,5 +8,10 @@ set -v
 
 echo "-----> Extracting Phalcon..."
 
+find .
+pwd
+find /app
+find /tmp
+
 echo "extension=phalcon.so" > /app/.heroku/php/etc/php/conf.d/007-ext-phalcon.ini
 tar -xPf phalcon-heroku.tar
