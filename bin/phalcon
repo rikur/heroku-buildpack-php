@@ -15,12 +15,7 @@ fi
 
 cd $phalcon_dir
 git checkout 2.1.x
-cd build/php5/64bits
-phpize
-export CFLAGS="-O2 -g"
-export PATH=$build_dir/.heroku/php/bin:$PATH
-./configure
-make
-make install
+cd ext
+./install
 
 cd $cwd
