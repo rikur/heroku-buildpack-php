@@ -1,21 +1,8 @@
 #!/bin/bash
 
-dep_url=https://github.com/rikur/cphalcon.git
-phalcon_dir=cphalcon
-cwd=$(pwd)
+echo "-----> Extracting Phalcon..."
 
-echo "-----> Building Phalcon..."
+echo "extension=phalcon.so" > /app/.heroku/php/etc/php/conf.d/007-ext-phalcon.ini
+tar -xPf phalcon-heroku.tar
 
-git clone $dep_url -q
-
-if [ ! -d "$phalcon_dir" ]; then
-  echo "       Failed to find Phalcon directory '$phalcon_dir'."
-  exit
-fi
-
-cd $phalcon_dir
-git checkout 2.1.x
-cd ext
-./install
-
-cd $cwd
+echo "       done!"
