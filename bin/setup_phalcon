@@ -4,5 +4,3 @@ echo "-----> Extracting Phalcon..."
 
 echo "extension=phalcon.so" > /app/.heroku/php/etc/php/conf.d/007-ext-phalcon.ini
 cp ./vendor/heroku/heroku-buildpack-php/phalcon.so $(php-config  --extension-dir)
-ln -fs /app/vendor/heroku/heroku-buildpack-php/phalcon-devtools /app/.heroku/php/bin/phalcon
-chmod +x /app/.heroku/php/bin/phalcon
